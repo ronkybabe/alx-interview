@@ -1,11 +1,15 @@
 #!/usr/bin/python3
+"""
+Module that determines if all the boxes can be opened
+"""
+
 def canUnlockAll(boxes):
     """
     Prototype that determines if all the boxes can be opened.
     """
     size = len(boxes)  # size of the list of boxes.
-    checkbox = {}  # dictionary that will contain the boxes that can be opened.
-    index = 0  # index of the box that will be checked.
+    checkbox = {}  # dictionary that contain the boxes that can be opened.
+    index = 0  # index in the box that will be checked.
 
     for keys in boxes:  # for each box in the list of boxes.
         if len(keys) == 0 or index == 0:
